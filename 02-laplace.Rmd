@@ -35,3 +35,14 @@ defined by:
 \mathcal{L}(f(t))=\int\limits_0^\infty f(t)e^{-st}dt\,\,\hspace{1cm} \text{, where } t\geq 0 \text{ and } s\geq 0 \text{ is a complex number}.
 \end{equation}
 **Existance Theorem:** If the given function $f(t)$ is piecewise continuous and satisfying the boundedness condition $|f(t)|\leq Me^{kt}$ for some $M$ and $K$ in $t\geq 0$, then the Laplace transform $\bar{f}(s)=\mathcal{L}(f(t))$ will exist for all $s>k$.
+
+>The existance theorem provides the condition for convergence of $\mathcal{L}(f(t))$.
+
+Terms and output in Laplace transform definition
+
+		\begin{itemize}
+		\item $\mathcal{L}(f(t))$ is a complex-valued function of complex numbers
+		\item  $s$ is called the (complex) frequency variable (free variable), with units $sec^{-1}$; $t$ is called
+		the time variable (in sec); $st$ is unitless
+		\item for now, we assume $f$ contains no impulses at $t = 0$
+	\end{itemize}
