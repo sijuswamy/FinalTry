@@ -1,0 +1,37 @@
+# Laplace Transform
+
+## Abstract
+Laplace transforms is a must item in an engineer's toolbox. This transform is the generalized form of the most using Fourier transform in Communication engineering. Since the Laplace transform converts integral and differential equations into algebraic equations, analysis of infinite continuous time signals is just study of zeros and poles of this complex valued algebraic expressions. This transform can be applied to general signals, (not just sinusoids) and handles non-steady-state conditions. Basic definition, properties and applications of the Laplace transform is discussed in the article.
+
+## Introduction
+
+The Laplace transform is a mathematical function which takes a positive time domain function $f(t)$  as argument and continuously sum it after winding over a negative exponential function. This helper function to wind $f(t)$ is called the *kernel* of integral. Real credit to this function will goes to Leonhard Euler with the basic formula $\displaystyle z=\int e^{ax}X(x)dx$. Euler spent a significant amount of time in the mid-18th century working on differential equations.
+
+ Euler used methods based on this transform to give a systematic method of solving second order linear differential equations.
+ 
+ This further work would have to wait for Laplace, who first presented the transform bearing his name in a 1782 paper ``{\em Memoire sur les approximations des formules qui sont fonctions de tres grands nombres}" where he used it to solve various difference and differential equations. 
+Intuitively speaking,the Laplace transform is a Fourier transform of a tamed function. You simply multiply your original function $f(t)$ with a decaying exponential strong enough to provide convergence of the Fourier integral. In effect the Laplace transform changes a time-based function into a modified sort of frequency based one. In many situations solution of this algebraic closed form equations are relatively easy. 
+
+ In applications view point the Laplace transform is a mathematical tool to solve higher order differential equations. With the help of Laplace Transform, higher order differential equations can be converted into an algebraic expression of $s$ where $s=\sigma+i\omega$ is regarded as Laplace free variable , then solving them become relatively easier.
+ To watch the video lesson on introduction to Laplace transform click: [Video lesson 1- introduction to the Laplace Transform](https://youtu.be/fWles8hGfd4)
+
+**Remark:** We are live in a time domain. For a layman, the minimum requirement to measure time is a clock with two hands. Similarly for an engineer $\sigma$ amd $\omega$ are the two handles to measure corresponding Laplace transform  in $s$-plane. They respectively measure the exponential magnitude and phase shift (rotation) in new space. So laplace transform intuitively shift us from time domain to frequency domain. In a layman approach whenever we think an event in terms of frequency, we automatically think in terms of some integral transforms. 
+ 
+ 
+A quick review of the first part of this module- Laplace transform and its properties - is available in the video lesson [Video Lesson-2](https://youtu.be/ZUkrC15VEA0).
+
+  Euler used methods based on this transform to give a systematic method of solving second order linear differential equations.
+
+## Laplace Transform-Definition and Properties
+
+To watch the video lesson on detailed explanation of the Laplace transform, properties, and derivation of results click :[Video Lesson-3](https://youtu.be/Z3q535XiZmM)
+
+## Definition of Laplace transform
+
+The Laplace transform of a signal (function) $f(t)$ is the function $\bar{f}(s)=\mathcal{L}(f(t))$
+defined by:
+
+\begin{equation}
+\mathcal{L}(f(t))=\int\limits_0^\infty f(t)e^{-st}dt\,\,\hspace{1cm} \text{, where } t\geq 0 \text{ and } s\geq 0 \text{ is a complex number}.
+\end{equation}
+**Existance Theorem:** If the given function $f(t)$ is piecewise continuous and satisfying the boundedness condition $|f(t)|\leq Me^{kt}$ for some $M$ and $K$ in $t\geq 0$, then the Laplace transform $\bar{f}(s)=\mathcal{L}(f(t))$ will exist for all $s>k$.
